@@ -1,14 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eee604fc-5540-4f8d-a86e-2002ec986adb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/specialistSpringAnnotation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/specialistSpringJava.iml" afterDir="false" />
+    <list default="true" id="eee604fc-5540-4f8d-a86e-2002ec986adb" name="Default Changelist" comment="09 04 21 18:40&#10;firstCommit&#10;Specialist Spring Java">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/builder/BuilderConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cities/CitiesApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/builder/cities/CitiesApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cities/CitiesHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/builder/cities/CitiesHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cities/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/builder/cities/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cities/SimpleCity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/builder/cities/SimpleCity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/house/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/builder/house/House.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/house/HouseBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/builder/house/HouseBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/house/Material.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/builder/house/Material.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/house/Wall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/builder/house/Wall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cities/CitiesApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cities/CitiesHolder$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cities/CitiesHolder$Holder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cities/CitiesHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cities/City.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cities/SimpleCity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/house/House.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/house/HouseBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/house/Material.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/house/Wall.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,19 +56,24 @@
     </option>
   </component>
   <component name="ProjectId" id="1qwF8L6xJqFmu2iwEg7kHL7ASnU" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
   <component name="RunManager">
     <configuration name="HouseBuilder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="house.HouseBuilder" />
+      <option name="MAIN_CLASS_NAME" value="builder.house.HouseBuilder" />
       <module name="specialistSpringJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="house.*" />
+          <option name="PATTERN" value="builder.cities.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,26 +172,34 @@
     <option name="LAST_COMMIT_MESSAGE" value="09 04 21 18:40&#10;firstCommit&#10;Specialist Spring Java" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="773" y="243" key="#com.intellij.ide.util.MemberChooser" timestamp="1618239708018">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="773" y="243" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/-1366.0.1366.768@0.0.1920.1050" timestamp="1618239708018" />
+    <state x="698" y="274" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1618241874609">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="698" y="274" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050/-1366.0.1366.768@0.0.1920.1050" timestamp="1618241874609" />
     <state x="559" y="122" key="CommitChangelistDialog2" timestamp="1617982726531">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="559" y="122" key="CommitChangelistDialog2/0.0.1920.1050/-1366.0.1366.768@0.0.1920.1050" timestamp="1617982726531" />
-    <state width="1860" height="268" key="GridCell.Tab.0.bottom" timestamp="1617982757113">
+    <state width="930" height="268" key="GridCell.Tab.0.bottom" timestamp="1618241933590">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1860" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1366.0.1366.768@0.0.1920.1050" timestamp="1617982757113" />
-    <state width="1860" height="268" key="GridCell.Tab.0.center" timestamp="1617982757113">
+    <state width="930" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1366.0.1366.768@0.0.1920.1050" timestamp="1618241933590" />
+    <state width="930" height="268" key="GridCell.Tab.0.center" timestamp="1618241933590">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1860" height="268" key="GridCell.Tab.0.center/0.0.1920.1050/-1366.0.1366.768@0.0.1920.1050" timestamp="1617982757113" />
-    <state width="1860" height="268" key="GridCell.Tab.0.left" timestamp="1617982757113">
+    <state width="930" height="268" key="GridCell.Tab.0.center/0.0.1920.1050/-1366.0.1366.768@0.0.1920.1050" timestamp="1618241933590" />
+    <state width="930" height="268" key="GridCell.Tab.0.left" timestamp="1618241933590">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1860" height="268" key="GridCell.Tab.0.left/0.0.1920.1050/-1366.0.1366.768@0.0.1920.1050" timestamp="1617982757113" />
-    <state width="1860" height="268" key="GridCell.Tab.0.right" timestamp="1617982757113">
+    <state width="930" height="268" key="GridCell.Tab.0.left/0.0.1920.1050/-1366.0.1366.768@0.0.1920.1050" timestamp="1618241933590" />
+    <state width="930" height="268" key="GridCell.Tab.0.right" timestamp="1618241933590">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1860" height="268" key="GridCell.Tab.0.right/0.0.1920.1050/-1366.0.1366.768@0.0.1920.1050" timestamp="1617982757113" />
+    <state width="930" height="268" key="GridCell.Tab.0.right/0.0.1920.1050/-1366.0.1366.768@0.0.1920.1050" timestamp="1618241933590" />
     <state x="560" y="260" key="Vcs.Push.Dialog.v2" timestamp="1617983129751">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

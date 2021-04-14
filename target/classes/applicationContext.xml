@@ -14,10 +14,10 @@
    		http://www.springframework.org/schema/aop/spring-aop.xsd
         "
 default-autowire="byName">
-    <context:component-scan base-package="house">
-        <context:include-filter type="assignable" expression="house.Material"/>
-        <context:include-filter type="assignable" expression="house.House"/>
-        <context:include-filter type="regex" expression="cities.City"/>
+    <context:component-scan base-package="builder.house">
+        <context:include-filter type="assignable" expression="builder.house.Material"/>
+        <context:include-filter type="assignable" expression="builder.house.House"/>
+        <context:include-filter type="regex" expression="builder.cities.City"/>
     </context:component-scan>
 
     <bean
@@ -53,8 +53,8 @@ default-autowire="byName">
     </bean>
 
 
-    <bean id="CitiesHolderBean" class="cities.CitiesHolder" scope="singleton">
-        <property name="cities">
+    <bean id="CitiesHolderBean" class="builder.cities.CitiesHolder" scope="singleton">
+        <property name="builder.cities">
             <list>
                 <ref bean="cityMskBean"/>
                 <ref bean="citySpbBean"/>
@@ -66,7 +66,7 @@ default-autowire="byName">
         </property>
     </bean>
 
-    <bean id="AbstractCity" class="cities.City" abstract="true" init-method="init">
+    <bean id="AbstractCity" class="builder.cities.City" abstract="true" init-method="init">
         <property name="founding" ref="foundAbstractBean"/>
         <property name="population" value="-1"/>
         <property name="name" value="Abs"/>
@@ -74,27 +74,27 @@ default-autowire="byName">
 
 
 
-    <bean id="cityMskBean" class="cities.City" parent="AbstractCity">
+    <bean id="cityMskBean" class="builder.cities.City" parent="AbstractCity">
         <property name="founding" ref="found1147Bean"/>
         <property name="population" value="10000000"/>
         <property name="name" value="Msk"/>
     </bean>
 
-    <bean id="cityNewBean" class="cities.City" parent="AbstractCity">
+    <bean id="cityNewBean" class="builder.cities.City" parent="AbstractCity">
         <property name="name" value="NewCity"/>
     </bean>
 
-    <bean id="cityNewBlankBean" class="cities.City" parent="AbstractCity">
+    <bean id="cityNewBlankBean" class="builder.cities.City" parent="AbstractCity">
 
     </bean>
 
-    <bean id="cityMskCloneBean" class="cities.City" init-method="init">
+    <bean id="cityMskCloneBean" class="builder.cities.City" init-method="init">
         <property name="founding" ref="found1147Bean"/>
         <property name="population" value="10000000"/>
         <property name="name" value="MskClone"/>
     </bean>
 
-    <bean id="citySpbBean" class="cities.City" init-method="init">
+    <bean id="citySpbBean" class="builder.cities.City" init-method="init">
         <property name="founding" ref="found1703Bean"/>
         <property name="population" value="5000000"/>
         <property name="name" value="Spb"/>
@@ -118,15 +118,15 @@ default-autowire="byName">
         <constructor-arg value="1"/>
     </bean>
     
-<!--    <bean id="house" class="house.House" init-method="init" autowire="byName">
+<!--    <bean id="builder.house" class="builder.house.House" init-method="init" autowire="byName">
         <property name="name" value="First"/>
     </bean>-->
 
-<!--    <bean id="brick" class="house.Wall">
+<!--    <bean id="brick" class="builder.house.Wall">
         <property name="material" value="brick"/>
     </bean>-->
 
-<!--    <bean id="logs" class="house.Wall">
+<!--    <bean id="logs" class="builder.house.Wall">
         <property name="material" value="logs"/>
     </bean>-->
 

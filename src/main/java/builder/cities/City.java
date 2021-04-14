@@ -1,4 +1,4 @@
-package cities;
+package builder.cities;
 
 import java.time.LocalDate;
 

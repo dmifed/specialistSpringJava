@@ -1,16 +1,10 @@
-package house;
+package builder.house;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.stereotype.Component;
 
 /**
  * @author dmifed
  */
-@Component("logBean")
 public class Wall implements Material {
-    @Value("logs")
     String material;
 
     public void setMaterial(String material) {
@@ -25,5 +19,9 @@ public class Wall implements Material {
     @Override
     public void build() {
         System.out.print(toString() + "; ");
+    }
+
+    public Wall(String material) {
+        this.material = material;
     }
 }

@@ -1,4 +1,4 @@
-package cities;
+package builder.cities;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +10,7 @@ public class CitiesHolder {
 
     private CitiesHolder(){
         cities = new ArrayList<>();
-        System.out.println("cities");
+        System.out.println("builder/cities");
     }
 
 

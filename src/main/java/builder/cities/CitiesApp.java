@@ -1,17 +1,14 @@
-package house;
+package builder.cities;
 
-import cities.CitiesHolder;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * @author dmifed
  */
-//@ComponentScan
-public class HouseBuilder {
+public class CitiesApp {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-        House house = context.getBean(House.class);
-        house.buildHouse();
+        CitiesHolder citiesHolder = context.getBean(CitiesHolder.class);
+        System.out.println(citiesHolder);
     }
 }
